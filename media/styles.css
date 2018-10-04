@@ -1,9 +1,30 @@
      h1{
       text-align: center;
+      color: green;
       font-size: 50px;
       font-family:  'Carter One', cursive;
       margin-top: 30px;
 
+      }
+       .redstone{
+      text-align: center;
+      color: red;
+      font-size: 50px;
+      font-family:  'Carter One', cursive;
+      margin-top: 30px;
+
+      }
+      h2{
+        font-family:  'Carter One', cursive;
+        font-size:16px;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      h3{
+        font-family:  'Carter One', cursive;
+        font-size:15px;
+        margin-top: 0;
+        margin-bottom: 0;
       }
 
 ul {
@@ -32,7 +53,7 @@ border-radius: 15px 15px 15px 15px;
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-    background-color: black;
+    background-color: green;
 -webkit-border-radius: 15px 15px 15px 15px;
 border-radius: 0px 15px 15px 15px;
 }
@@ -50,7 +71,7 @@ li.dropdown {
     position: absolute;
     right: 0;
     background-color: #f9f9f9;
-    min-width: 160px;
+    min-width: 10px;
     box-shadow: 0px 8px 40px 0px
     -webkit-border-radius: 15px 15px 15px 15px;
 border-radius: 0px 15px 15px 15px;
@@ -70,14 +91,14 @@ border-radius: 0px 15px 15px 15px;
 
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {background-color: green}
 
 .dropdown:hover .dropdown-content {
     display: block;
     
 }
         body {
-    background-image: url("photo-1529700215145-58542a1f36b6.webp");
+    background-image: url("IMG_6137.png");
     background-repeat: no-repeat;
     background-size: cover;
 
