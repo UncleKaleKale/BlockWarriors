@@ -5,8 +5,10 @@
     <head>
       
       <link href="https://fonts.googleapis.com/css?family=Audiowide|Black+Ops+One|Bowlby+One+SC|Carter+One|Quantico" rel="stylesheet">
-           <h1 class=" Carter One cursive">BlockWarriors</h1>
-
+   <div class="index-blk">
+      <a target="_blank" href="blockwarriors.png">
+      <img src="" alt="" width="0" height="90">
+      </a>
      <title>BlockWarriors</title>
 
 <head>
@@ -16,21 +18,85 @@
 
 </head>
 <body>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+}
 
-<ul>
-  <li><a href="index.html"><h2>Home</h2></a></li>
-  
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">
-<i class="fa fa-bars" style="font-size:24px;"></i></a>
-    <div class="dropdown-content">
-      <a href="adventure-maps.html"><h3>Adventure Maps</h3></a>
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
 
-      <a href="redstone-creations.html"><h3>Redstone Creations</h3></a>
-      <a href="tricks-&-tips.html"><h3>Tips & Tricks</h3></a>
-    </div>
-  </li>
-</ul>
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
 
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onmouseover="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="adventure-maps.html">Adventure Maps</a>
+  <a href="redstone-creations.html">Redstone Creations</a>
+  <a href="tricks-&-tips.html">Tips & Tricks</a>
+</div>
+
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onmouseover="openNav()">&#9776; open</span>
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "75%";
+    document.getElementById("main").style.marginLeft = "0px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+}
+</script>
+     
 </body>
 </html>
