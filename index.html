@@ -2,8 +2,8 @@
   <html>
 
     <head>
-      
-      <link href="https://fonts.googleapis.com/css?family=Audiowide|Black+Ops+One|Bowlby+One+SC|Carter+One|Quantico" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
        <div class="index-blk">
          <a target="_blank" href="blockwarriors.png">
           <img src="" alt="" width="0" height="90">
@@ -32,18 +32,17 @@
                   top: 0;
                   left: 0;
                   min-width: 20px;
-                  max-height: 100%;
                   background-color: #111;
                   overflow-x: hidden;
                   transition: 0.5s;
-                  padding-top: 60px;\-webkit-border-radius: 0 15px 15px 0;
+                  padding-top: 60px;
+                  -webkit-border-radius: 0 15px 15px 0;
               border-radius: 0 15px 15px 0;
               }
 
               .sidenav a {
-                  padding: 8px 8px 8px 32px;
+                  padding: 8px 8px 8px 8px;
                   text-decoration: none;
-                  font-size: 25px;
                   color: #818181;
                   display: block;
                   transition: 0.3s;
@@ -51,15 +50,24 @@
               }
 
               .sidenav a:hover {
+                -webkit-border-radius: 15px 15px 15px 15px;
                   color: #f1f1f1;
+                  background-color: green;opacity: .7;
+
+                    max-width: 250px;
+                    border:1px #E0E0E0; opacity: .7;
+                    -webkit-box-shadow: 0 5px 25px 1px rgba(0,0,0,5);
+                  box-shadow: 0 5px 25px 1px rgba(0,0,0,5);
+
               }
 
               .sidenav .closebtn {
                   position: absolute;
+                  min-height: 100%;
                   top: 0;
                   right: 25px;
-                  font-size: 36px;
-                  margin-left: 50px;
+                  font-size: 0px;
+
 
               }
 
@@ -69,55 +77,86 @@
               }
 
               @media screen and (max-height: 450px) {
-                .sidenav {padding-top: 15px;}
-                .sidenav {padding-bottom: 15px;}
-                .sidenav a {font-size: 18px;}
+
+
+
               }
-              <meta name="viewport" content="width=device-width, initial-scale=1">
+              
 
-                .container {
-                    position: relative;
-                    width: 350px;
-                    max-width: 400px;
-                }
+div.gallery {
+    position: relative;
+    float:left;
+    max-width: 250px;
+    padding-left: 15px;
+    padding-right: 15px
+
+    
+}
+
+div.gallery:hover {
+
+}
 
 
-                .container .btn {
-                    position: relative;
-                    width: 350px;
-                    max-width: 400px;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    -ms-transform: translate(-50%, -50%);
-                    background-color: grey; Opacity: .5;
-                    font-size: 16px;
-                    padding: 122px 40px ;
-                    border: none;
-                    cursor: pointer;
-                    border-radius: 5px;
-                    text-align: center;
-                }
+div.gallery img {
+    max-width:100%;
 
-                .container .btn:hover {
-                    background-color: black;
-                }
-                                </style>
+    -webkit-border-radius: 15px 15px 15px 15px;
+border-radius: 15px 15px 15px 15px;
+
+    
+    
+}
+
+  div.desc {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-family: 'Fjalla One', sans-serif;
+    position: relative;
+    text-align: center;
+    color: #E0E0E0; opacity: 1;
+    font-size:18px; 
+}              </style>
               </head>
                 <body>
 
                   <div id="mySidenav" class="sidenav">
-                    <a href="javascript:void(0)" class="closebtn" onmouseover="closeNav()">&times;</a>
-                    <div class="container">
-  <img src="media/IMG_6137.png" alt="Snow" style="width:100%">
-  <button class="btn"></button>
-</div>
-                    <a href="index.html">Home</a>
-                    <a href="adventure-maps.html">Adventure Maps</a>
-                    <a href="redstone-creations.html">Redstone Creations</a>
-                    <a href="tricks-&-tips.html">Tips & Tricks</a>
-                  </div>
+                    <a href="javascript:void(0)" class="closebtn" onmouseout="closeNav()">&times;</a>
+                    <div>
+                      
+                    </div>
+
+                    <div class="gallery">
+                      <a target="_blank" href="index.html">
+                        <img src="media/IMG_6137.png" alt="Home" >
+                      </a>
+                      <div class="desc">Home</div>
+                    </div>
+
+                    <div class="gallery">
+                      <a target="_blank" href="adventure-maps.html">
+                        <img src="media/minecraft-354463__340.png" alt="Adventure Maps">
+                      </a>
+                      <div class="desc">Adventure Maps</div>
+                    </div>
+
+                    <div class="gallery">
+                      <a target="_blank" href="redstone-creations.html">
+                        <img src="media/minecraft-655163__340.jpg" alt="Redstone Creations">
+                      </a>
+                      <div class="desc">Redstone Creations</div>
+                    </div>
+
+                    <div class="gallery">
+                      <a target="_blank" href="tricks-&-tips.html">
+                        <img src="media/minecraft-655163__340.jpg" alt="Tips & Tricks">
+                      </a>
+                      <div class="desc">Tips & Tricks</div>
+                    </div>
+
+
+
+                    </div>
 
                   <div id="main">
                     <span style="font-size:30px;cursor:pointer" onmouseover="openNav()">&#9776;</span>
